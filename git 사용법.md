@@ -110,6 +110,110 @@ html의 기본구조(Interface)는
 
 HTML, CSS, JAVASCRIPT
 
-CSS : 
+CSS : **Cascading Style Sheets**(**CSS**)는 [HTML](https://developer.mozilla.org/ko/docs/Web/HTML)이나 [XML (en-US)](https://developer.mozilla.org/en-US/docs/Web/XML)([SVG](https://developer.mozilla.org/ko/docs/Web/SVG), [XHTML](https://developer.mozilla.org/ko/docs/Glossary/XHTML) 같은 XML 방언(dialect) 포함)로 작성된 문서의 표현을 기술하기 위해 쓰이는 [스타일시트](https://developer.mozilla.org/ko/docs/Web/API/StyleSheet) 언어입니다.
 
 JS(JAVASCRIPT):HTML Page를 역동적으로 구현하기 위한 기능을 만드는 언어
+
+
+
+html_css/test2.html문서를 보면
+
+```html
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>웹 페이지의 구성 요소</title>
+    <style>
+        body {
+            background -color: linen;
+            color: green;
+            margin-left: 40px;
+            margin-right: 40px;
+        }
+
+        h3 {
+            text-align: center;
+            color: darkred;
+        }
+
+        hr {
+            height: 5px;
+            border: solid grey;
+            background-color: grey
+        }
+
+        span {
+            color: blue;
+            font-size: 20px;
+        }
+    </style>
+    <script>
+        function show() { // <img>에 이미지 달기
+            document.getElementById("fig").src = "ElvisPresley.png"
+        }
+
+        function hide() { // <img>에 이미지 제거
+            document.getElementById("fig").src = "";
+        }
+    </script>
+</head>
+
+<body>
+    <h3 onmouseover="show()" onmouseout="hide()">
+        Elvis Presley</h3>
+    <hr>
+    <div>
+        <img id="fig" src=""></div>
+    He was an American singer and actor. In November
+    1956, he made his film debut in <span>Love Me
+        Tender</span>. He is often referred to as
+    "<span>the King of Rock and Roll</span>".
+</body>
+
+</html>
+```
+
+CSS -> <style> 내용 </style>
+
+javascript -> <style> 내용 </style>
+
+태그를 선언하고 그 안에 적는 onmouseover, onmouseout 같은 것을 이벤트 리스너와 id, src와 같은 속성을 적어서 html기능을 추가한다.
+
+
+
+###### 메타데이터
+
+데이터의 성질 등을 나타내는 데이터
+
+메터데이터를 정의 내리는 태그는 HTML 페이지에 대한 메타 데이터를 담기 위한 태그들
+
+-<base>, <link>,<script>,<style>,<title>,<meta>
+
+head 태그 안에 위의 태그를 사용한다.
+
+단, script태그는 body태그 안에도 사용할 수 있다.
+
+```
+<meta> 태그는 다양한 메타 데이터 표현
+– 웹 페이지의 저작자, 문자 인코딩 방식, 내용 등
+➢ 웹 페이지의 저작자가 “황기태”임을 표기하는 사례
+▪ <meta name="author" content="황기태">
+➢ 웹 페이지의 내용 설명
+▪ <meta name="description" content="입학 요령에 대한 자세한 사항">
+➢ 웹 페이지의 키워드(검색 엔진에 의해 검색되게 하기 위함)
+▪ <meta name="keywords" content="컴퓨터, 소프트웨어, 스마트폰">
+➢ charset 속성으로 웹 페이지에 사용하는 문자 코드 지정
+▪ <meta charset=“UTF-8”>
+
+```
+
+###### img태그
+
+<img>태그의 src 속성에 이미지 파일의 주소 지정
+
+- src에 지정할 수 있는 이미지 종류
+  - BMP, GIF, PNG, JPG(JPEG), animated-GIF
+
+![image-20210322210318879](https://user-images.githubusercontent.com/32979365/111987285-613e8b00-8b52-11eb-94c0-c4cd00064ac6.png)
+
