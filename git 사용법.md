@@ -16,7 +16,7 @@ git init
 >> Initialized empty Git repository in E:\99. My Documents\GitHub\html_css/.git/
 ```
 
-![git 초기화 결과 화면](https://github.com/nanjaiquai/html_css01/tree/main/image/git init.png)
+![git 초기화 결과 화면](https://github.com/nanjaiquai/html_css01/blob/main/image/git%20init.PNG?raw=true)
 
 버전을 관리할 파일을 STATE상에 올려놓는 과정과 COMMIT하는 과정을 거쳐야 만이 그 파일이 버전이 정해지면서 관리를 할 수 있다.
 
