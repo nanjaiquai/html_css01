@@ -48,13 +48,13 @@ github.com에 접속해서 회원 가입을 해서 본인의 계정을 생성하
 
 New 를 선택해서 새로운 원격지 repository를 생성한다.
 
-![](C:\Users\5102000294\Pictures\git new repository.PNG)
+![새 저장소 만들기 선택](https://github.com/nanjaiquai/html_css01/blob/main/image/git%20new%20repository.PNG?raw=true)
 
 
 
 새 repository를 하기의 Repository name에 입력해서 생성한다.
 
-![](C:\Users\5102000294\Pictures\Create New Repository.PNG)
+![새 저장소 만들기](https://github.com/nanjaiquai/html_css01/blob/main/image/Create%20New%20Repository.PNG?raw=true)
 
 다음과 같은 명령어를 이용해서 원격 github repository와 local git repository를 연결한다.
 
